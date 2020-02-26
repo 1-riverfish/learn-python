@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+'a student class module'
+
+__author__ = 'Yaptain Jiang'
+
+class Student(object):
+
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def print_score(self):
+        print("%s: %s" % (self.name, self.score))
+
+if __name__ == "__main__":
+    bart = Student('Bart Simpson', 59)
+    lisa = Student('Lisa Simpson', 87)
+    bart.print_score()
+    lisa.print_score()
+
